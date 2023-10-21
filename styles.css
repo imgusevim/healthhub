@@ -65,3 +65,10 @@
     font-size: 18px;
   }
   
+  .custom-bg-color {
+    background-color: #65ff3e54; /* Здесь можно указать цвет по вашему выбору */
+}
+
+.btn {
+  margin-bottom: 100px; /* Установите нужное значение в пикселях */
+}

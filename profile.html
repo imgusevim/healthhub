@@ -7,42 +7,105 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Навигационная панель -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="logo.png" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Профиль
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Мои показатели</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="progtrain.html">Дневник тренировок</a>
-                        <a class="dropdown-item" href="progeat.html">Дневник питания</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="training.html">Программы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="eating.html">Питание</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="authorization.html">Вход/Регистрация</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+ <!-- Навигационная панель -->
+ <nav class="navbar navbar-expand-lg navbar-light custom-bg-color">
+    <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-5">
+                <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Профиль
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profile.html">Мои показатели</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="progtrain.html">Дневник тренировок</a>
+                    <a class="dropdown-item" href="progeat.html">Дневник питания</a>
+                </div>
+            </li>
+            <li class="nav-item mr-5">
+                <a class="nav-link font-weight-bold" href="training.html">Программы</a>
+            </li>
+            <li class="nav-item mr-5">
+                <a class="nav-link font-weight-bold" href="eating.html">Питание</a>
+            </li>
+            <li class="nav-item mr-5">
+                <a class="nav-link font-weight-bold"  href="authorization.html">Вход/Регистрация</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Наполнение -->
-    
+        <div class="container">
+            <!-- Верхняя часть страницы с аватаром пользователя -->
+            <div class="row mt-4">
+                <div class="col-md-9">
+                    <!-- Персональные данные -->
+                    <h4>Персональные данные</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Имя пользователя</label>
+                                <input type="text" class="form-control" id="inputName" value="Барсик">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputGender">Пол</label>
+                                <input type="text" class="form-control" id="inputGender" value="Кот">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputBirthdate">Дата рождения</label>
+                                <input type="text" class="form-control" id="inputBirthdate" value="01.01.2015">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Адрес электронной почты</label>
+                                <input type="text" class="form-control" id="inputEmail" value="lovefish@miem.hse.ru">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 text-right">
+                    <!-- Аватар пользователя -->
+                    <img src="avatar.jpg" alt="Аватар пользователя" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        
+            <!-- Физические характеристики -->
+            <h4 class="mt-4">Физические характеристики</h4>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputHeight">Рост (см)</label>
+                        <input type="text" class="form-control" id="inputHeight" value="60">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputWeight">Вес (кг)</label>
+                        <input type="text" class="form-control" id="inputWeight" value="5">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputBMI">Индекс массы тела (ИМТ)</label>
+                        <input type="text" class="form-control" id="inputBMI" value="13.89">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            function calculateBMI() {
+                var height = parseFloat(document.getElementById('inputHeight').value);
+                var weight = parseFloat(document.getElementById('inputWeight').value);
+                var bmi = (weight / ((height / 100) * (height / 100))).toFixed(2);
+                document.getElementById('inputBMI').value = bmi;
+            }
+        </script>
+
     <!-- Подвал с контактной информацией -->
     <footer class="footer fixed-bottom">
         <div class="custom-footer">
