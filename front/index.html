@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg-color">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-5">
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Профиль
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="pages/profile.html">Мои показатели</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="pages/progtrain.html">Дневник тренировок</a>
+                        <a class="dropdown-item" href="pages/progeat.html">Дневник питания</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link font-weight-bold" href="pages/training.html">Программы</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link font-weight-bold" href="pages/eating.html">Питание</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a class="nav-link font-weight-bold"  href="pages/authorization.html">Вход/Регистрация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Секция с приветственным сообщением -->
+    <section id="welcome" class="container text-center py-5">
+        <h1 class="custom-margin">Добро пожаловать на HealthHub!</h1>
+        <p class="custom-margin">Наша платформа предназначена для комплексного и индивидуализированного подхода к восстановлению здоровья и совершенствованию физической формы человека.</p>
+        <a href="pages/training.html" class="btn btn-primary btn-sm custom-margin custom-button">Подобрать программу тренировок</a>
+        <a href="pages/eating.html" class="btn btn-primary btn-sm custom-margin custom-button">Подобрать программу питания</a>
+    </section>
+
+<!-- Секция "Слайдер" -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Индикаторы (точки) слайдов -->
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Слайды карусели -->
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/slad1.jpg" alt="Первый слайд" class="carousel-image">
+            <div class="carousel-caption">
+            <p>Современный образ жизни ставит перед людьми вызовы, связанные с необходимостью следить за физическим здоровьем и питанием.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slad2.jpg" alt="Второй слайд" class="carousel-image">
+            <div class="carousel-caption">
+            <p>В условиях растущего интереса к здоровому образу жизни создание веб-приложения, объединяющего тренировки и питание, является очень востребованным.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/slad3.jpg" alt="Третий слайд" class="carousel-image">
+            <div class="carousel-caption">
+            <p>Новый уровень персонализации, предоставляемый интеграцией нейронных сетей, позволит улучшить эффективность тренировок и сделать управление тренировочным процессом и питанием более осознанным. </p>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Стрелки для переключения слайдов -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+
+        <!-- Секция "О нас" -->
+        <section id="about" class="container py-5 mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center">Для кого наше приложение?</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="list-unstyled custom-margin">
+                                    <li>1. Людей, заботящихся о своем здоровье и физической форме, которые ищут индивидуализированный и комплексный подход к улучшению своего физического состояния.</li>
+                                    <li>2. Спортсменов и любителей фитнеса, желающих улучшить свои спортивные результаты, оптимизировать тренировки и диету.</li>
+                                    <li>3. Людей, страдающих от каких-либо заболеваний или физических ограничений, ищущих программы восстановления и поддержания здоровья.</li>
+                                    <li>4. Тех, кто желает получить персонализированные рекомендации и планы, соответствующие их индивидуальным потребностям и целям.</li>
+                                    <li>5. Тренеров и специалистов в области фитнеса и здоровья, которые хотят использовать платформу для работы с клиентами и предоставления им поддержки и советов.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Текст, разбитый на три колонки с подзаголовками -->
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-sm-4 mb-5">
+                    <div class="border-example"> <!-- Добавляем рамку и внутренний отступ -->
+                        <h4>Пользовательские профили:</h4>
+                        <p>Пользователи могут создать свои персональные профили, указать свои цели, физическое состояние и предпочтения.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-5">
+                    <div class="border-example"> <!-- Добавляем рамку и внутренний отступ -->
+                        <h4>Тренировочные планы:</h4>
+                        <p>Пользователям предоставляются индивидуальные тренировочные планы, адаптированные к их уровню физической активности и целям.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="border-example"> <!-- Добавляем рамку и внутренний отступ -->
+                        <h4>Планы питания:</h4>
+                        <p>Возможность создания персонализированных планов питания в соответствии с диетическими предпочтениями и потребностями.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="border-example"> <!-- Добавляем рамку и внутренний отступ -->
+                    <h4>Мониторинг здоровья:</h4>
+                    <p>Система позволяет отслеживать показатели здоровья, включая вес, давление, уровень активности и многое другое.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="border-example"> <!-- Добавляем рамку и внутренний отступ -->
+                    <h4>Искусственный интеллект:</h4>
+                    <p>Применение алгоритмов машинного обучения и искусственного интеллекта для персонализации рекомендаций и анализа данных пользователя.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Другие секции (Программы, Расписание, Блог, Контакты) могут быть добавлены по аналогии с вышеприведенными секциями -->
+
+    <!-- Подвал с контактной информацией -->
+    <footer class="footer fixed-bottom">
+    <div class="custom-footer">
+        <p>&copy; Гусев Иван - Health Hub 2023. Все права защищены.</p>
+    </div>
+    </footer>
+
+    <!-- Подключение библиотеки Bootstrap и скриптов -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</body>
+</html>
