@@ -1,16 +1,23 @@
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация и вход</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
 </head>
 <body>
      <!-- Навигационная панель -->
      <nav class="navbar navbar-expand-lg navbar-light custom-bg-color">
-        <a class="navbar-brand" href="/front/index.html">
-            <img src="/front/images/logo.png" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'main/images/logo.png' %}" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,20 +29,20 @@
                         Профиль
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Мои показатели</a>
+                        <a class="dropdown-item" href="/profile">Мои показатели</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="progtrain.html">Дневник тренировок</a>
-                        <a class="dropdown-item" href="progeat.html">Дневник питания</a>
+                        <a class="dropdown-item" href="/training">Дневник тренировок</a>
+                        <a class="dropdown-item" href="/eating">Дневник питания</a>
                     </div>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link font-weight-bold" href="training.html">Программы</a>
+                    <a class="nav-link font-weight-bold" href="/progtrain">Программы</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link font-weight-bold" href="eating.html">Питание</a>
+                    <a class="nav-link font-weight-bold" href="/progeat">Питание</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link font-weight-bold"  href="authorization.html">Вход/Регистрация</a>
+                    <a class="nav-link font-weight-bold"  href="/auth">Вход/Регистрация</a>
                 </li>
             </ul>
         </div>
@@ -113,11 +120,5 @@
             <p>&copy; Гусев Иван - Health Hub 2023. Все права защищены.</p>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/front/css/styles.css">
 </body>
 </html>

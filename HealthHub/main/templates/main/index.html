@@ -1,15 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
 </head>
 <body>
     <!-- Навигационная панель -->
     <nav class="navbar navbar-expand-lg navbar-light custom-bg-color">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'main/images/logo.png' %}" alt="Ваш логотип" width="100" height="50" class="d-inline-block align-top">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,20 +27,20 @@
                         Профиль
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="pages/profile.html">Мои показатели</a>
+                        <a class="dropdown-item" href="/profile">Мои показатели</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="pages/progtrain.html">Дневник тренировок</a>
-                        <a class="dropdown-item" href="pages/progeat.html">Дневник питания</a>
+                        <a class="dropdown-item" href="/training">Дневник тренировок</a>
+                        <a class="dropdown-item" href="/eating">Дневник питания</a>
                     </div>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link font-weight-bold" href="pages/training.html">Программы</a>
+                    <a class="nav-link font-weight-bold" href="/progtrain">Программы</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link font-weight-bold" href="pages/eating.html">Питание</a>
+                    <a class="nav-link font-weight-bold" href="/progeat">Питание</a>
                 </li>
                 <li class="nav-item mr-5">
-                    <a class="nav-link font-weight-bold"  href="pages/authorization.html">Вход/Регистрация</a>
+                    <a class="nav-link font-weight-bold"  href="/auth">Вход/Регистрация</a>
                 </li>
             </ul>
         </div>
@@ -45,8 +51,8 @@
     <section id="welcome" class="container text-center py-5">
         <h1 class="custom-margin">Добро пожаловать на HealthHub!</h1>
         <p class="custom-margin">Наша платформа предназначена для комплексного и индивидуализированного подхода к восстановлению здоровья и совершенствованию физической формы человека.</p>
-        <a href="pages/training.html" class="btn btn-primary btn-sm custom-margin custom-button">Подобрать программу тренировок</a>
-        <a href="pages/eating.html" class="btn btn-primary btn-sm custom-margin custom-button">Подобрать программу питания</a>
+        <a href ="/progtrain" class="btn btn-primary btn-sm custom-margin custom-button">Подобрать программу тренировок</a>
+        <a href="/progeat" class="btn btn-primary btn-sm custom-margin custom-button">Подобрать программу питания</a>
     </section>
 
 <!-- Секция "Слайдер" -->
@@ -61,19 +67,19 @@
         <!-- Слайды карусели -->
         <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/slad1.jpg" alt="Первый слайд" class="carousel-image">
+            <img src="{% static 'main/images/slad1.jpg' %}" alt="Первый слайд" class="carousel-image">
             <div class="carousel-caption">
             <p>Современный образ жизни ставит перед людьми вызовы, связанные с необходимостью следить за физическим здоровьем и питанием.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="images/slad2.jpg" alt="Второй слайд" class="carousel-image">
+            <img src="{% static 'main/images/slad2.jpg' %}" alt="Второй слайд" class="carousel-image">
             <div class="carousel-caption">
             <p>В условиях растущего интереса к здоровому образу жизни создание веб-приложения, объединяющего тренировки и питание, является очень востребованным.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="images/slad3.jpg" alt="Третий слайд" class="carousel-image">
+            <img src="{% static 'main/images/slad3.jpg' %}" alt="Третий слайд" class="carousel-image">
             <div class="carousel-caption">
             <p>Новый уровень персонализации, предоставляемый интеграцией нейронных сетей, позволит улучшить эффективность тренировок и сделать управление тренировочным процессом и питанием более осознанным. </p>
             </div>
@@ -163,13 +169,5 @@
         <p>&copy; Гусев Иван - Health Hub 2023. Все права защищены.</p>
     </div>
     </footer>
-
-    <!-- Подключение библиотеки Bootstrap и скриптов -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-
 </body>
 </html>
