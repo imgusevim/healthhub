@@ -52,7 +52,8 @@
     <!-- Наполнение -->
     <div class="container mt-5">
         <h4 class="text-center mb-5">Заполните данные для создания плана питания</h4>
-        <form>
+        <form method="post">
+            {% csrf_token %}
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Пол</label>

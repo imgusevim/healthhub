@@ -85,7 +85,8 @@
         
             <!-- Физические характеристики -->
             <h4 class="mt-4">Физические характеристики</h4>
-            <form>
+            <form method="post">
+                {% csrf_token %}
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputHeight">Рост (см)</label>
@@ -100,8 +101,8 @@
                         <input type="text" class="form-control" id="inputBMI" value="13.89">
                     </div>
                 </div>
+                <button type="submit" class="btn btn-primary">Сохранить</button>
             </form>
-            <button type="submit" class="btn btn-primary" href="" >Сохранить</button>
         </div>
 
     <!-- Подвал с контактной информацией -->

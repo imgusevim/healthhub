@@ -57,7 +57,8 @@
     <!-- Ввод информации о тренировках -->
     <section id="workout-entry" class="container py-4">
         <h2>Запись тренировок на сегодня</h2>
-        <form>
+        <form method="post">
+            {% csrf_token %}
             <div class="form-group">
                 <label>Кардиотренировки:</label>
                 <div>

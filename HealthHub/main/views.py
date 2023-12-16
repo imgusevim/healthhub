@@ -6,8 +6,8 @@ def index(request):
     return render(request,'main/index.html')
 
 
-# def eating(request):
-#     return render(request,'main/eating.html')
+def eating(request):
+    return render(request,'main/eating.html')
 
 
 def training(request):
@@ -17,11 +17,11 @@ def training(request):
 def profile(request):
     return render(request,'main/profile.html')
 
-def create(request):
-    form = EatingListForm()
+# def create(request):
+#     form = EatingListForm()
 
-    data = {
-        'form': form
-    }
+#     data = {
+#         'form': form
+#     }
 
-    return render(request,'main/eating.html', data)
+#     return render(request,'main/eating.html', data)
