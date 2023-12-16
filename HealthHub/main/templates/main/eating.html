@@ -57,7 +57,9 @@
     <!-- Ввод информации о приемах пищи -->
     <section id="meal-entry" class="container py-4 mb-5">
         <h2>Запись приемов пищи на сегодня</h2>
-        <form>
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
             <div class="form-group">
                 <label>Завтрак:</label>
                 <div>
